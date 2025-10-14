@@ -69,8 +69,8 @@ input[type="number"]::-webkit-outer-spin-button {
   position: relative;
 }
 
-.payment .payment-inner .payment-space .payment-info .name p,
-.payment .payment-inner .payment-space .payment-info .email p {
+.payment .payment-inner .payment-space .payment-info .name span,
+.payment .payment-inner .payment-space .payment-info .email span {
   position: absolute;
   top: 1.4rem;
   left: 2.7rem;
@@ -120,9 +120,9 @@ input[type="number"]::-webkit-outer-spin-button {
   position: relative;
 }
 
-.payment .payment-inner .payment-space .payment-card .card-number p,
-.payment .payment-inner .payment-space .payment-card .date p,
-.payment .payment-inner .payment-space .payment-card .code p {
+.payment .payment-inner .payment-space .payment-card .card-number span,
+.payment .payment-inner .payment-space .payment-card .date span,
+.payment .payment-inner .payment-space .payment-card .code span {
   position: absolute;
   top: 1.5rem;
   left: 2.7rem;

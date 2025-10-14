@@ -43,6 +43,7 @@
 }
 
 .sign .sign-inner .content .button {
+  width: max-content;
   opacity: 0.9;
   background: #ed5a25;
   border-radius: 10rem;
