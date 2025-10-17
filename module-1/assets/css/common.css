@@ -3,9 +3,6 @@
 :root {
   --primary-color: #ed5a25;
   --secondary-color: #fff4f1;
-  --text-gray: #aeaeae;
-  --text-white: #fff;
-  --border-color: #f2f2f2;
 }
 
 * {
@@ -18,19 +15,18 @@
 
 html {
   font-size: 10px;
+  overscroll-behavior: none;
 }
 
 body {
   font-family: "Quicksand", sans-serif;
-  font-size: 1.4rem;
-  color: #333;
+  font-size: 1.6rem;
+  font-weight: 400;
   line-height: 1.5;
-  position: relative;
-  inset: 0;
 }
 
 input {
-  font-family: Quicksand, Helvetica, sans-serif;
+  font-family: "Quicksand", Helvetica, sans-serif;
 }
 
 img {
@@ -46,47 +42,5 @@ ol {
 
 a {
   text-decoration: none;
-  color: #333;
-}
-
-.icon-white-color {
-  color: #fff;
-}
-
-.icon-primary-color {
-  color: var(--primary-color);
-}
-
-.icon-gray-color {
-  color: #e5e5e5;
-}
-
-.icon-primary-bg {
-  background: var(--primary-color);
-}
-
-.icon-gray-bg {
-  background: #e5e5e5;
-}
-
-.shopping-btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  padding-block: 10px;
-  border-radius: 129px;
-  color: var(--primary-color);
-  background: var(--secondary-color);
-}
-
-.favorite {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #000;
 }
