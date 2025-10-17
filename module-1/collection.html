@@ -3,7 +3,1276 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Collection</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo/logo-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/collection/category-list.css" />
+    <link rel="stylesheet" href="./assets/css/collection/product-list.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/collection/modal.css" />
+
+    <link rel="stylesheet" href="./assets/css/collection/responsive.css" />
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <section class="about-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="subway-menu">
+                <a href="./index.html">
+                  <img
+                    src="./assets/images/icon-svg/subway_menu.svg"
+                    alt="subway menu"
+                  />
+                </a>
+              </div>
+              <!--end .subway-menu-->
+            </div>
+            <!--end .col-6-->
+            <div class="col-md-6 col-sm-6">
+              <div class="contact">
+                <a href="tel:1920010800">Hotline: 19200 10800</a>
+              </div>
+              <!--end .contact-->
+            </div>
+            <!--end .col-6-->
+          </div>
+          <!--end .row-->
+          <div class="row">
+            <div class="col-6 col-lg-6">
+              <div class="about-us">
+                <a href="#!">Về chúng tôi</a>
+              </div>
+              <!--end .about-us-->
+            </div>
+            <!--end .col-6-->
+            <div class="col-6 col-lg-6">
+              <div class="other">
+                <div class="about-support">
+                  <a href="#!">Trung tâm hỗ trợ</a>
+                </div>
+                <!--end .about-support-->
+                <div class="about-language">
+                  <select name="language">
+                    <option value="VN">VN</option>
+                    <option value="ENG">ENG</option>
+                    <option value="JP">JP</option>
+                    <option value="KOR">KOR</option>
+                  </select>
+                </div>
+                <!--end about-language-->
+                <div class="about-account">
+                  <a
+                    href="./account.html"
+                    class="user-icon fa-regular fa-circle-user"
+                  ></a>
+                  <a href="./account.html">Tài khoản</a>
+                  <label
+                    for="sign-toggle"
+                    class="arrow-down fa-solid fa-chevron-down"
+                  ></label>
+                  <input type="checkbox" id="sign-toggle" hidden />
+                  <ul class="sign">
+                    <li>
+                      <a target="_blank" href="./sign-in.html">Đăng nhập</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="./sign-up.html">Đăng ký</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--end .about-account-->
+              </div>
+              <!--end .other-->
+            </div>
+            <!--end .col-6-->
+          </div>
+          <!--end .row-->
+        </div>
+        <!--end .container-->
+      </section>
+      <!--end .about-info-->
+      <section class="heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-6">
+              <div class="heading-logo">
+                <div class="logo">
+                  <a href="./index.html">
+                    <img src="./assets/images/logo/logo.png" alt="logo" />
+                  </a>
+                </div>
+                <!--end .logo-->
+                <div class="brand">
+                  <h1>
+                    <a href="./index.html">Nap<span>Tien</span></a>
+                  </h1>
+                </div>
+                <!--end .brand-->
+              </div>
+              <!--end .heading-logo-->
+            </div>
+            <!--end .col-6-->
+            <div class="col-6 col-lg-6">
+              <div class="heading-search">
+                <div class="condition"><span>All categories</span></div>
+                <div class="search-btn">
+                  <form>
+                    <input type="text" placeholder="Search" required />
+                    <button
+                      class="search-icon fa-solid fa-magnifying-glass"
+                    ></button>
+                  </form>
+                </div>
+              </div>
+              <!--end .heading-search-->
+            </div>
+            <!--end .col-6-->
+          </div>
+          <!--end .row-->
+        </div>
+        <!--end .container-->
+      </section>
+      <!--end .heading-->
+      <section class="navigation-contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <label
+                for="menu-toggle"
+                class="menu-icon fa-solid fa-bars"
+              ></label>
+            </div>
+            <!--end .col-sm-6-->
+            <div class="col-md-6 col-sm-6">
+              <div class="other">
+                <button
+                  class="search-icon fa-solid fa-magnifying-glass"
+                ></button>
+                <label
+                  for="account-toggle"
+                  class="user-icon fa-regular fa-user"
+                ></label>
+                <input type="checkbox" id="account-toggle" hidden />
+                <ul class="sign">
+                  <li><a href="./account.html">Trang cá nhân</a></li>
+                  <li>
+                    <a target="_blank" href="./sign-in.html">Đăng nhập</a>
+                  </li>
+                  <li><a target="_blank" href="./sign-up.html">Đăng ký</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--end .col-sm-6-->
+          </div>
+          <!--end .row-->
+          <div class="row">
+            <div class="col-6 col-lg-6">
+              <nav class="navigation">
+                <ul>
+                  <li><a href="./index.html">Trang chủ</a></li>
+                  <li><a href="#!">Thẻ điện thoại</a></li>
+                  <li><a href="#!">Nạp game</a></li>
+                </ul>
+              </nav>
+              <!--end .navigation-->
+            </div>
+            <!--end .col-6-->
+            <div class="col-6 col-lg-6">
+              <div class="contact">
+                <a href="tel:1920010800">Hotline: 19200 10800</a>
+              </div>
+              <!--end .contact-->
+            </div>
+          </div>
+          <!--end .row-->
+        </div>
+        <!--end .container-->
+      </section>
+      <!--end .navigation-contact-->
+    </header>
+    <!--end #header | còn thiếu menu-mobile -->
+    <input type="checkbox" id="menu-toggle" hidden />
+    <div class="modal">
+      <div class="modal-inner">
+        <div class="modal-heading">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./assets/images/logo/logo.png" alt="logo" />
+            </a>
+          </div>
+          <!--end .logo-->
+          <div class="brand">
+            <h1>
+              <a href="./index.html">Nap<span>Tien</span></a>
+            </h1>
+          </div>
+          <!--end .brand-->
+          <label for="menu-toggle" class="close-btn fa-solid fa-xmark"></label>
+        </div>
+        <!--end .modal-heading-->
+        <div class="modal-body">
+          <a href="./collection.html">Card voucher</a>
+          <a href="#!">Top-Up</a>
+          <a href="#!">Contact us</a>
+        </div>
+        <!--end .modal-body-->
+      </div>
+      <!--end .modal-inner-->
+      <label for="menu-toggle" class="modal-overlay"></label>
+    </div>
+    <!-- end.modal-->
+    <main>
+      <section class="collection">
+        <div class="container">
+          <div class="collection-inner">
+            <div class="row">
+              <div class="col-12 col-sm-12">
+                <div class="navigation">
+                  <div class="nav-menu-icon">
+                    <span class="line line-100"></span>
+                    <span class="line line-80"></span>
+                    <span class="line line-60"></span>
+                  </div>
+                  <!--end .nav-menu-icon-->
+                  <p>Card Voucher > <span>Mobile card</span></p>
+                </div>
+                <!--end .navigation-->
+              </div>
+              <!--end .col-12-->
+            </div>
+            <!--end .row-->
+            <div class="row">
+              <div class="col-3 category-list col-lg-4 col-md-5 col-sm-10">
+                <div class="product-catalog">
+                  <div class="title">
+                    <h3>Danh mục sản phẩm</h3>
+                  </div>
+                  <!--end .title-->
+                  <ul class="categories">
+                    <li><a href="#!">Mobile Game Cards</a><span>05</span></li>
+                    <li><a href="#!">Game Cards</a><span>10</span></li>
+                    <li><a href="#!">Payment Cards</a><span>12</span></li>
+                    <li><a href="#!">Gift Cards</a><span>30</span></li>
+                    <li><a href="#!">Game Console</a><span>49</span></li>
+                    <li><a href="#!">Game CD-Key</a><span>33</span></li>
+                    <li><a href="#!">Video Streaming</a><span>34</span></li>
+                    <li><a href="#!">Music</a><span>56</span></li>
+                    <li><a href="#!">Shopping</a><span>01</span></li>
+                    <li><a href="#!">Telco Prepaid Cards</a><span>34</span></li>
+                    <li><a href="#!">Tools</a><span>05</span></li>
+                    <li><a href="#!">Software</a><span>06</span></li>
+                    <li><a href="#!">Social App</a><span>09</span></li>
+                    <li><a href="#!">Freebie Code</a><span> 10</span></li>
+                    <li><a href="#!">Subscript</a><span>11</span></li>
+                  </ul>
+                  <!--end .categories-->
+                </div>
+                <!--end .product-catalog-->
+                <div class="price-range">
+                  <div class="title">
+                    <h3>
+                      <a href="#!">Khoảng giá</a>
+                    </h3>
+                  </div>
+                  <!--end .title-->
+                  <div class="content">
+                    <div class="range">
+                      <span class="circle circle-left icon-primary-bg"></span>
+                      <span class="line-60 icon-primary-bg"></span>
+                      <span class="line-40 icon-gray-bg"></span>
+                      <span class="circle circle-right icon-gray-bg"></span>
+                    </div>
+                    <p>Price: 500.000 - 1.000.000</p>
+                    <div class="button">
+                      <a href="#!">Lọc</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="rate">
+                  <div class="title">
+                    <h3>
+                      <a href="#!">Đánh giá</a>
+                    </h3>
+                  </div>
+                  <!--end .title-->
+                  <ul class="rate-catalog">
+                    <li>
+                      <span class="square-btn icon-checked"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                      <p>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                      </p>
+                      <span>(120k)</span>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <p>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-gray-color"></i>
+                      </p>
+                      <span>(120k)</span>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <p>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-gray-color"></i>
+                        <i class="fa-solid fa-star icon-gray-color"></i>
+                      </p>
+                      <span>(120k)</span>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <p>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-gray-color"></i>
+                        <i class="fa-solid fa-star icon-gray-color"></i>
+                        <i class="fa-solid fa-star icon-gray-color"></i>
+                      </p>
+                      <span>(120k)</span>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <p>
+                        <i class="fa-solid fa-star icon-primary-color"></i>
+                        <i class="fa-solid fa-star icon-gray-color"></i>
+                        <i class="fa-solid fa-star icon-gray-color"></i>
+                        <i class="fa-solid fa-star icon-gray-color"></i>
+                        <i class="fa-solid fa-star icon-gray-color"></i>
+                      </p>
+                      <span>(120k)</span>
+                    </li>
+                  </ul>
+                </div>
+                <!--end .rate-->
+                <div class="brand">
+                  <div class="title">
+                    <h3>
+                      <a href="#!">Thương hiệu</a>
+                    </h3>
+                  </div>
+                  <ul class="brand-list">
+                    <li>
+                      <span class="square-btn icon-checked"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                      <a href="#!">Apple</a>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <a href="#!">Google</a>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <a href="#!">Microsoft</a>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <a href="#!">Amazon</a>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <a href="#!">McDonald's</a>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <a href="#!">Visa</a>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <a href="#!">Tencent</a>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <a href="#!">Louis Vuitton</a>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <a href="#!">MasterCard</a>
+                    </li>
+                    <li>
+                      <span class="square-btn"></span>
+                      <a href="#!">Coca-Cola</a>
+                    </li>
+                  </ul>
+                  <!--end .brand-list-->
+                  <!--end .title-->
+                </div>
+                <!--end .brand-->
+                <aside class="advertise">
+                  <div class="image">
+                    <a href="#!">
+                      <img
+                        src="./assets/images/collection/adv/advertise.png"
+                        alt="advertise hinh anh"
+                      />
+                    </a>
+                  </div>
+                  <!--end .image-->
+                  <div class="content-adv">
+                    <h3>
+                      <a href="#">Card voucher<br />hot news</a>
+                    </h3>
+                    <div class="view-all-btn">
+                      <a href="#">View all</a>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <!--end .view-all-btn-->
+                  </div>
+                  <!--end .content-->
+                </aside>
+              </div>
+              <!--end .col-3-->
+              <div class="col-9 col-lg-8 col-md-12 col-sm-12">
+                <div class="row">
+                  <div
+                    class="product-show col-12 col-lg 12 col-md-12 col-sm-12"
+                  >
+                    <p>Showing 1-12</p>
+                    <p class="sort-btn">
+                      Sort by latest <i class="fa-solid fa-chevron-down"></i>
+                    </p>
+                  </div>
+                </div>
+                <!--end .row-->
+                <div class="row">
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-1.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-2.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-3.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-4.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-5.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-6.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-7.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-8.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-9.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-10.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-11.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-12.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-13.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-14.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-15.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-16.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-17.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-18.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-19.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                  <div class="col-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="product-item">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="./assets/images/collection/product/product-20.png"
+                            alt="hinh anh danh muc"
+                          />
+                        </a>
+                      </div>
+                      <!--end .image-->
+                      <div class="favorite">
+                        <img
+                          src="./assets/images/icon-svg/heart-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <!--end .favorite-->
+                      <div class="card-body">
+                        <h3>Target Gift Card 50$ (US)- Order</h3>
+                        <p>120.000 ~ 134.000</p>
+                        <button class="shopping-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <span>Mua ngay</span>
+                        </button>
+                      </div>
+                    </div>
+                    <!--end .product-item-->
+                  </div>
+                  <!--end .col-3-->
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12">
+                    <div class="location-list">
+                      <a href="#!" class="fa-solid fa-arrow-left"> </a>
+                      <a href="#!">1</a>
+                      <a href="#!">2</a>
+                      <a href="#!">3</a>
+                      <a href="#!">4</a>
+                      <a href="#!" class="fa-solid fa-arrow-right"> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end .col-9-->
+            </div>
+            <!--end .row-->
+            <div class="row">
+              <div class="col-12 col-sm-12 adv-mobile">
+                <aside class="advertise">
+                  <div class="image">
+                    <a href="#!">
+                      <img
+                        src="./assets/images/collection/adv/advertise.png"
+                        alt="advertise hinh anh"
+                      />
+                    </a>
+                  </div>
+                  <!--end .image-->
+                  <div class="content-adv">
+                    <h3>
+                      <a href="#">Card voucher hot news</a>
+                    </h3>
+                    <div class="view-all-btn">
+                      <a href="#">View all</a>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <!--end .view-all-btn-->
+                  </div>
+                  <!--end .content-->
+                </aside>
+                <!--end .advertise-->
+              </div>
+              <!--end .col-12-->
+            </div>
+            <!--end .row-->
+          </div>
+          <!--end .collection-inner-->
+        </div>
+        <!--end .container-->
+      </section>
+      <!--end .collection-->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="row">
+            <div class="col-3 col-sm-6">
+              <div class="info-block">
+                <h3>About us</h3>
+                <ul class="info-list">
+                  <li><a href="#!">About us</a></li>
+                  <li><a href="#!">News</a></li>
+                  <li><a href="#!">Support</a></li>
+                  <li><a href="#!">Contact</a></li>
+                </ul>
+              </div>
+              <!--end info-block-->
+            </div>
+            <!--end .col-3-->
+            <div class="col-3 col-sm-6">
+              <div class="service-block">
+                <h3>service</h3>
+                <ul class="service-list">
+                  <li><a href="#!">Help Center</a></li>
+                  <li><a href="#!">Privacy Policy</a></li>
+                  <li><a href="#!">How to buy</a></li>
+                  <li><a href="#!">Terms of use</a></li>
+                </ul>
+              </div>
+              <!--end service-block-->
+            </div>
+            <!--end .col-3-->
+            <div class="col-3 col-sm-6">
+              <div class="payment-block">
+                <h3>payment</h3>
+                <ul class="payment-list">
+                  <li>
+                    <a href="#!"
+                      ><img
+                        src="./assets/images/footer/payment/paypal.png"
+                        alt="paypal image"
+                    /></a>
+                    <a href="#!"
+                      ><img
+                        src="./assets/images/footer/payment/visa.png"
+                        alt="visa image"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#!"
+                      ><img
+                        src="./assets/images/footer/payment/shb.png"
+                        alt="shb image"
+                    /></a>
+                    <a href="#!"
+                      ><img
+                        src="./assets/images/footer/payment/gpb.png"
+                        alt="gp bank image"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#!"
+                      ><img
+                        src="./assets/images/footer/payment/sgb.png"
+                        alt="sai gon bank image"
+                    /></a>
+                    <a href="#!"
+                      ><img
+                        src="./assets/images/footer/payment/cod.png"
+                        alt="cod image"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <!--end payment-block-->
+            </div>
+            <!--end .col-3-->
+            <div class="col-3 col-sm-6">
+              <div class="social-block">
+                <h3>follow us</h3>
+                <ul class="social-list">
+                  <li>
+                    <img
+                      src="./assets/images/footer/social-icon/facebook.svg"
+                      alt="facebook icon image"
+                    />
+                    <a href="#!">Facebook</a>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/footer/social-icon/linkedin.svg"
+                      alt="linkedin icon image"
+                    />
+                    <a href="#!">LinkedIn</a>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/footer/social-icon/instagram.svg"
+                      alt="instagram icon image"
+                    />
+                    <a href="#!">Instagram</a>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/footer/social-icon/zalo-icon.png"
+                      alt="zalo image"
+                    />
+                    <a href="tel:0982636800">Zalo</a>
+                  </li>
+                </ul>
+              </div>
+              <!--end social-block-->
+            </div>
+            <!--end .col-3-->
+          </div>
+          <!--end .row-->
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <div class="company">
+                <h3>company</h3>
+                <p>
+                  <a href="tel:0982636800"
+                    >Hotline: 0982636800 (Các ngày trong tuần từ 8h đến 24h)
+                  </a>
+                </p>
+                <p>
+                  <a href="mailto:abcs@gmail">Email: abcs@gmail.</a>
+                </p>
+              </div>
+            </div>
+            <!--end .col-6-->
+            <div class="col-6 col-sm-12">
+              <div class="certification">
+                <h3>certification</h3>
+                <div class="certification-image">
+                  <img
+                    src="./assets/images/footer/certification/certification-1.png"
+                    alt="certification image"
+                  />
+                  <img
+                    src="./assets/images/footer/certification/certification-2.png"
+                    alt="certification image"
+                  />
+                  <img
+                    src="./assets/images/footer/certification/certification-3.png"
+                    alt="certification image"
+                  />
+                </div>
+              </div>
+            </div>
+            <!--end .col-6-->
+          </div>
+          <!--end .row-->
+          <div class="row">
+            <div class="col-12 col-sm-12">
+              <div class="copyright">
+                <span>&copy; 2024 Company (201201016057) (1001568-K)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end .footer-->
+  </body>
 </html>

@@ -111,6 +111,151 @@
 }
 
 @media screen and (max-width: 991.98px) {
+  #header .heading .heading-search .condition {
+    padding: 1.3rem 1rem;
+  }
+
+  #header .about-info .other .about-account:hover .arrow-down {
+    rotate: 0deg;
+  }
+
+  #header .about-info .other .about-account #sign-toggle:checked ~ .sign {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #header .about-info .other .about-account #sign-toggle:not(:checked) ~ .sign {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* #header : end */
+
+  .banner .banner-service {
+    margin-top: 3rem;
+  }
+
+  .banner .banner-service .service-item span {
+    display: none;
+  }
+
+  /* giảm size service-item */
+  .banner .banner-service .service-item img {
+    width: 4.981rem;
+    height: 4.981rem;
+    object-fit: cover;
+  }
+
+  .banner .banner-service .service-item .refund-icon {
+    width: 4.981rem;
+    height: 4.981rem;
+  }
+
+  .banner .banner-service .service-item .refund-icon img {
+    width: 2.497rem;
+    height: 2.497rem;
+    object-fit: cover;
+  }
+
+  .banner .banner-sub {
+    --column-space: 2rem;
+  }
+
+  /* .banner : end */
+
+  .advertise .image {
+    height: 25.1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .advertise .image img {
+    object-fit: cover;
+    border-radius: 3rem;
+  }
+
+  .advertise .content .content-title {
+    font-size: 2.4rem;
+  }
+
+  .advertise .content .content-description {
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+  }
+
+  .advertise .content .view-all-btn {
+    margin-top: 1.6rem;
+    max-width: max-content;
+    padding: 0.34rem 1.67rem;
+    border: 0.08rem solid var(--primary-color);
+  }
+
+  .advertise .content .view-all-btn a {
+    font-size: 1.2rem;
+  }
+
+  .advertise .content .view-all-btn i {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .advertise .advertise-discount .content,
+  .advertise .advertise-gift .content {
+    top: 7.5rem;
+    left: 8.4rem;
+    bottom: 5rem;
+    max-width: 30rem;
+  }
+
+  /* .advertise : end */
+  #product .title h2 {
+    font-size: 3rem;
+  }
+
+  #product .title-all {
+    margin-top: 0.7rem;
+  }
+
+  #product .by-categories {
+    --column-space: 2rem;
+  }
+
+  #product .by-categories .product-banner {
+    --column-space: 2rem;
+  }
+
+  #product .see-all {
+    margin-top: -0.5rem;
+  }
+
+  #product .best-selling {
+    --column-space: 2rem;
+  }
+
+  #product .best-selling .best-selling-banner .content .content-title {
+    font-size: 2.6rem;
+  }
+
+  #product .best-selling .product-list .item .item-body h3 {
+    font-size: 1.4rem;
+  }
+  #product .best-selling .product-list .item .item-body p {
+    font-size: 1.2rem;
+  }
+
+  #product .best-selling .product-list .item .item-body .shopping-btn {
+    font-size: 1.2rem;
+  }
+  /* .best-selling :end */
+
+  #block-category {
+    margin-top: 1.6rem;
+    --column-space: 2rem;
+  }
+  /* #block-category : end */
+
+  /* #product: end */
   .col-lg-1 {
     --col-size: 1;
   }
@@ -198,10 +343,6 @@
 
   .banner .banner-service {
     margin-top: 2.4rem;
-  }
-
-  .banner .banner-service .service-item span {
-    display: none;
   }
 
   /* giảm size service-item */
@@ -331,6 +472,7 @@
 
   #product .by-categories {
     --col-total: 12;
+    --column-space: 2.4rem;
   }
 
   #product .by-categories .product-banner {
@@ -373,6 +515,11 @@
     margin-top: -0.4rem;
   }
   /* #product: end */
+  #block-category {
+    margin-top: 1.6rem;
+    --column-space: 2.4rem;
+  }
+  /* #block-category : end */
 
   #news-promotions .title h2 a {
     font-size: 2.8rem;
@@ -384,11 +531,7 @@
     font-size: 1rem;
   }
   /*  #news-promotions: end */
-  #block-category {
-    margin-top: 1.6rem;
-    --column-space: 2.4rem;
-  }
-  /* #block-category : end */
+
   /* footer */
   #footer {
     margin-top: 4.3rem;

@@ -61,6 +61,56 @@
   transform: scale(1.2);
 }
 
+/* menu sign */
+
+#header .about-info .other .about-account {
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+#header .about-info .other .about-account .sign {
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 0 1rem 0 var(--primary-color);
+  position: absolute;
+  top: 3.9rem;
+  right: 0;
+  z-index: 116;
+  background: #fff;
+  transition: 0.4s ease;
+  transition-property: opacity visibility rotate;
+}
+
+#header .about-info .other .about-account .arrow-down {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  rotate: 0;
+  transition: 0.4s ease;
+  transition-property: rotate;
+}
+
+#header .about-info .other .about-account .sign li {
+  width: 10.991rem;
+  border-bottom: 0.1rem solid #eb835d;
+  padding: 0.5rem 1.8rem;
+}
+
+#header .about-info .other .about-account .sign a {
+  color: var(--primary-color);
+}
+
+#header .about-info .other .about-account:hover .sign,
+#header .about-info .other .about-account:focus .sign {
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .about-info .other .about-account:hover .arrow-down {
+  rotate: -180deg;
+}
+
 /* about-info: end */
 
 /* .heading: begin */
@@ -226,6 +276,49 @@
   padding-block: 1.9rem;
   font-size: 1.6rem;
   color: #5c5c5c;
+  user-select: none;
+}
+
+#header .navigation-contact .other .user-icon:active,
+#header .navigation-contact .other .user-icon:focus {
+  color: var(--primary-color);
+}
+
+#header .navigation-contact .other {
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+#header .navigation-contact .other .sign {
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 0 1rem 0 var(--primary-color);
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  z-index: 116;
+  background: #fff;
+  transition: 0.4s ease;
+  transition-property: opacity visibility rotate;
+}
+
+#header .navigation-contact .other .sign li {
+  display: flex;
+  align-items: center;
+  width: 8rem;
+  border-bottom: 0.1rem solid #eb835d;
+  padding: 0.5rem;
+}
+
+#header .navigation-contact .other .sign a {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+#header .navigation-contact #account-toggle:checked + .sign {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* mobile:  end */
