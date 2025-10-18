@@ -86,6 +86,10 @@
   line-height: normal;
 }
 
+#news-promotions .posts .post-item .post-title a {
+  color: #404040;
+}
+
 #news-promotions .posts .post-item:hover {
   border: 0.1rem solid var(--primary-color);
 }

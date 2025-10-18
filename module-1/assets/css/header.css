@@ -76,10 +76,18 @@
   position: absolute;
   top: 3.9rem;
   right: 0;
-  z-index: 116;
+  z-index: 118;
   background: #fff;
   transition: 0.4s ease;
   transition-property: opacity visibility rotate;
+}
+
+#header .about-info .other .about-account .sign-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 117;
+  opacity: 0;
+  visibility: hidden;
 }
 
 #header .about-info .other .about-account .arrow-down {
@@ -92,9 +100,9 @@
 }
 
 #header .about-info .other .about-account .sign li {
-  width: 10.991rem;
+  width: 10.5rem;
   border-bottom: 0.1rem solid #eb835d;
-  padding: 0.5rem 1.8rem;
+  padding: 0.5rem 1.5rem;
 }
 
 #header .about-info .other .about-account .sign a {
@@ -297,7 +305,7 @@
   position: absolute;
   top: 4rem;
   right: 0;
-  z-index: 116;
+  z-index: 120;
   background: #fff;
   transition: 0.4s ease;
   transition-property: opacity visibility rotate;
@@ -316,9 +324,18 @@
   font-size: 1rem;
 }
 
-#header .navigation-contact #account-toggle:checked + .sign {
+#header .navigation-contact #account-toggle:checked + .sign,
+#header .navigation-contact #account-toggle:checked ~ .sign-overlay {
   opacity: 1;
   visibility: visible;
+}
+
+#header .navigation-contact .other .sign-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 119;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* mobile:  end */

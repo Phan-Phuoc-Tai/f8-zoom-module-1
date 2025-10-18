@@ -25,6 +25,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 1.6rem;
+  background: var(--primary-color);
   padding: 2.7rem 2.7rem 2.09rem;
   border-bottom: 0.1rem solid #f2f2f2;
   font-family: "Poppins", sans-serif;
@@ -36,18 +37,18 @@
 }
 
 .modal .modal-heading .brand a {
-  color: #404040;
+  color: #fff;
 }
 
 .modal .modal-heading .brand span {
-  color: var(--primary-color);
+  color: #fff;
 }
 
 .modal .modal-heading .close-btn {
   margin-left: auto;
   padding: 1rem 0.8rem;
   font-size: 1.6rem;
-  color: #787777;
+  color: #f8f6f6;
 }
 
 .modal .modal-heading .close-btn:hover {

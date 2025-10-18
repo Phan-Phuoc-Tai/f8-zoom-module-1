@@ -1,14 +1,59 @@
-.collection .collection-inner .navigation {
-  margin-top: 1.7rem;
-  display: none;
+.collection {
+  margin-top: 18.9rem;
 }
 
-.collection .collection-inner .navigation .nav-menu-icon {
-  background: var(--primary-color);
-  padding: 0.6rem 1.7rem 0.3rem;
-  border-radius: 10rem;
+.collection .navigation {
+  display: none;
+  user-select: none;
 }
-.collection .collection-inner .navigation .nav-menu-icon .line {
+
+.collection .navigation nav,
+.collection .navigation .menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collection .navigation nav {
+  gap: 1.2rem;
+}
+
+.collection .navigation .menu {
+  gap: 0.5rem;
+}
+
+.collection .navigation .menu .arrow-right {
+  color: #afafaf;
+  cursor: default;
+}
+
+.collection .navigation .menu li a {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #afafaf;
+}
+
+.collection .navigation .menu li input:checked + a {
+  color: #323232;
+}
+
+.collection .navigation .menu li:hover a {
+  text-decoration: underline;
+}
+
+.collection .navigation .menu-icon {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  width: 4.4rem;
+  background: var(--primary-color);
+  padding: 0.5rem 1.2rem 0.2rem;
+  border-radius: 10rem;
+  user-select: none;
+}
+.collection .navigation .menu-icon .line {
   display: block;
   width: 2.1rem;
   height: 0.3rem;
@@ -17,116 +62,198 @@
   margin-bottom: 0.3rem;
 }
 
-.collection .collection-inner .navigation .nav-menu-icon .line-80 {
+.collection .navigation .menu-icon .line-100 {
+  width: 100%;
+}
+
+.collection .navigation .menu-icon .line-80 {
   width: 80%;
 }
 
-.collection .collection-inner .navigation .nav-menu-icon .line-60 {
+.collection .navigation .menu-icon .line-60 {
   width: 60%;
 }
 
-.collection .collection-inner .product-show {
+/* .navigation: end */
+
+.collection .product-show {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 0.3rem;
+  margin-top: 2.7rem;
   margin-bottom: 2.4rem;
   padding-left: 1.2rem;
 }
 
-.collection .collection-inner .product-show p {
+.collection .product-show p {
   font-size: 1.4rem;
   font-weight: 500;
   font-family: "Manrope", sans-serif;
   color: #323232;
+  user-select: none;
+  cursor: default;
 }
-.collection .collection-inner .product-show .sort-btn {
+
+.collection .product-show .sort-btn {
   display: none;
+  /* display: flex; */
+  align-items: center;
   border: 0.1rem solid #e5e5e5;
   padding: 0.68rem 1rem;
+  position: relative;
+}
+
+.collection .product-show .sort-btn .menu-sort {
+  position: absolute;
+  top: 3.1rem;
+  right: 0;
+  z-index: 118;
+  background: #fff;
+  box-shadow: 0 0 0.5rem 0 #00000057;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+  transition-property: opacity visibility;
+}
+
+.collection .product-show .sort-btn .sort-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 117;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.collection .product-show .sort-btn .menu-sort li {
+  width: 11.1rem;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-bottom: 0.05rem solid #ddd;
+  cursor: pointer;
+}
+
+.collection .product-show .sort-btn .menu-sort li a {
+  font-size: 1.1rem;
+  color: #323232;
+}
+
+.collection .product-show .sort-btn .menu-sort li:hover a,
+.collection .product-show .sort-btn .menu-sort li:focus a {
+  color: var(--primary-color);
+}
+
+.collection .product-show .sort-btn p {
   font-size: 1.1rem;
 }
 
-.collection .collection-inner .product-show .sort-btn i {
+.collection .product-show .sort-btn label {
+  font-size: 1.1rem;
   color: #aeaeae;
   margin-left: 0.8rem;
 }
 
-.collection .collection-inner .product-item .card-body .shopping-btn {
-  padding-block: 0.7rem;
-  margin-top: 1.2rem;
-  cursor: pointer;
-  user-select: none;
-  transition: background 0.4s ease;
+.collection .product-show .sort-btn #sort-toggle:checked ~ .menu-sort,
+.collection .product-show .sort-btn #sort-toggle:checked ~ .sort-overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
-.collection .collection-inner .product-item .card-body .shopping-btn:hover {
-  background: var(--primary-color);
-  color: var(--text-white);
-}
-
-.collection .collection-inner .col-3:hover .product-item {
-  border: 0.1rem solid #ffdbce;
-  outline: 0.1rem solid #ffdbce;
-  cursor: pointer;
-}
-
-.collection .collection-inner .col-3:hover .favorite {
-  opacity: 0;
-}
-
-.collection .collection-inner .product-item {
-  border: 0.1rem solid var(--border-color);
+.collection .item {
+  padding: 1.2rem 1.1rem;
+  border: 0.1rem solid #f2f2f2;
   border-radius: 3rem;
-  padding: 1.2rem 1.1rem 1.3rem;
   position: relative;
 }
 
-.collection .collection-inner .product-item .image img {
-  width: 100%;
-  object-fit: cover;
+.collection .item .image {
+  user-select: none;
 }
 
-.collection .collection-inner .product-item .favorite {
+.collection .item .item-body {
+  padding-inline: 0.8rem;
+  margin-top: 1.2rem;
+}
+.collection .item .item-body h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+}
+
+.collection .item .item-body p {
+  margin-top: 0.8rem;
+  font-size: 1.5525rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+.collection .item .item-body .shopping-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+  padding-block: 0.64rem;
+  border-radius: 12.9rem;
+  background: var(--secondary-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5525rem;
+  color: var(--primary-color);
+  user-select: none;
+  cursor: pointer;
+}
+
+.collection .item .item-body .shopping-btn a {
+  color: var(--primary-color);
+}
+
+.collection .item:hover {
+  border: 0.1rem solid #ffdbce;
+}
+
+.collection .item .item-body .shopping-btn:hover,
+.collection .item .item-body .shopping-btn:hover a {
+  background: var(--primary-color);
+  color: #fff;
+}
+/* mobile */
+.collection .item .item-body .shopping-btn:focus,
+.collection .item .item-body .shopping-btn:focus a {
+  background: var(--primary-color);
+  color: #fff;
+}
+/* mobile */
+
+.collection .item .favorite label {
   position: absolute;
   top: 2.4rem;
   right: 2.1rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
   cursor: pointer;
-  transition: opacity 0.4s ease;
 }
 
-.collection .collection-inner .product-item .favorite img {
-  width: 1.6rem;
-  height: 1.6rem;
-  object-fit: cover;
+.collection .item .favorite .favorite-icon {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0.4rem;
+  font-size: 1.6rem;
 }
 
-.collection .collection-inner .product-item .card-body {
-  margin-top: 1.2rem;
-  padding-left: 0.8rem;
+.collection .item .favorite label input:checked + .favorite-icon {
+  background: rgb(250, 36, 61);
+  color: #fff;
 }
 
-.collection .collection-inner .product-item .card-body h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #000;
-  font-family: "Poppins", sans-serif;
+.collection .item .favorite label:hover .favorite-icon {
+  color: rgb(250, 36, 61);
 }
+/* item : end */
 
-.collection .collection-inner .product-item .card-body p {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--primary-color);
-  line-height: 1.3;
-  margin-top: 0.8rem;
-}
-.collection .collection-inner .product-item .card-body span {
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
-}
-
-.collection .collection-inner .location-list {
+.collection .location-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,12 +264,12 @@
   user-select: none;
 }
 
-.collection .collection-inner .location-list [class*="fa-arrow-"] {
+.collection .location-list [class*="fa-arrow-"] {
   font-size: 2rem;
   color: #787777;
   background: #fff;
 }
-.collection .collection-inner .location-list a {
+.collection .location-list a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -155,26 +282,96 @@
   user-select: none;
 }
 
-.collection .collection-inner .location-list a:nth-child(2) {
+.collection .location-list a:nth-child(2) {
   background: var(--primary-color);
   color: #fff;
 }
 
-.collection .collection-inner .location-list a:hover {
+.collection .location-list a:hover {
   text-decoration: underline;
 }
 
-.collection .collection-inner .location-list [class*="fa-arrow-"]:hover {
+.collection .location-list [class*="fa-arrow-"]:hover {
   color: var(--primary-color);
   background: none;
   text-decoration: none;
 }
 
-.collection .collection-inner .adv-mobile {
+.collection .adv-mobile {
   display: none;
+  background: #ffdacd;
+  border-radius: 2.5rem;
+  text-align: center;
+  padding: 4.4rem 0 5.7rem;
 }
 
-.collection .collection-inner .adv-mobile .advertise {
+.collection .adv-mobile .advertise {
   padding: 2.3rem 1.4rem 5.3rem;
   margin-bottom: 2.8rem;
+}
+
+/* mobile list voucher */
+
+.collection .navigation .list-card-voucher {
+  position: fixed;
+  top: 1.9rem;
+  left: 1.2rem;
+  z-index: 119;
+  width: 34.1rem;
+  background: #fff;
+  border: 0.1rem solid #ddd;
+  border-radius: 2rem;
+  transform: translateX(-120%);
+  transition: transform 0.4s ease;
+}
+
+.collection .navigation #voucher-toggle:checked ~ .list-card-voucher {
+  transform: translateX(0);
+}
+
+.collection .navigation #voucher-toggle:checked ~ .voucher-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.collection .voucher-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 117;
+  background: #00000065;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+  transition-property: opacity visibility;
+}
+
+.collection .list-card-voucher .voucher-header .title {
+  border-width: 0 0 0.1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.1rem 2.7rem 2.4rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.collection .list-card-voucher .voucher-header .title h2 a {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: normal;
+  color: #565656;
+}
+
+.collection .list-card-voucher .voucher-header .title .close-voucher {
+  color: #787777;
+  font-size: 1.6rem;
+}
+
+.collection .list-card-voucher .voucher-body .categories {
+  border-width: 0.1rem 0 0 0;
+}
+
+.collection .list-card-voucher .voucher-body span {
+  display: block;
+  color: #afafaf;
 }

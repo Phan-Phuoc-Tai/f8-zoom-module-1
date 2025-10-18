@@ -15,51 +15,221 @@
     />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/common.css" />
-    <link rel="stylesheet" href="./assets/css/payment/header-acc.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/payment/payment-onl.css" />
+    <link rel="stylesheet" href="./assets/css/payment/modal.css" />
     <link rel="stylesheet" href="./assets/css/payment/responsive.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-inner">
-          <div class="row heading">
-            <!-- menu-mobile -->
-            <div class="col-sm-6">
-              <div class="image">
-                <a href="#!"
-                  ><img
+    <header id="header">
+      <section class="about-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="subway-menu">
+                <a href="#">
+                  <img
                     src="./assets/images/icon-svg/subway_menu.svg"
-                    alt="menu icon"
-                /></a>
+                    alt="subway menu"
+                  />
+                </a>
               </div>
-              <!--end .image-->
+              <!--end .subway-menu-->
             </div>
-            <div class="col-sm-6">
+            <!--end .col-6-->
+            <div class="col-md-6 col-sm-6">
               <div class="contact">
                 <a href="tel:1920010800">Hotline: 19200 10800</a>
               </div>
               <!--end .contact-->
             </div>
-            <!-- menu-mobile:end -->
+            <!--end .col-6-->
           </div>
           <!--end .row-->
-          <div class="row navigation">
-            <div class="col-sm-12">
-              <div class="heading-icon-mb">
-                <i class="heading-icon menu-icon fa-solid fa-bars"></i>
-                <i class="heading-icon fa-solid fa-magnifying-glass"></i>
-                <i class="heading-icon fa-solid fa-user"></i>
+          <div class="row">
+            <div class="col-6 col-lg-6">
+              <div class="about-us">
+                <a href="#!">Về chúng tôi</a>
               </div>
+              <!--end .about-us-->
+            </div>
+            <!--end .col-6-->
+            <div class="col-6 col-lg-6">
+              <div class="other">
+                <div class="about-support">
+                  <a href="#!">Trung tâm hỗ trợ</a>
+                </div>
+                <!--end .about-support-->
+                <div class="about-language">
+                  <select name="language">
+                    <option value="VN">VN</option>
+                    <option value="ENG">ENG</option>
+                  </select>
+                </div>
+                <!--end about-language-->
+                <div class="about-account">
+                  <a
+                    href="./account.html"
+                    class="user-icon fa-regular fa-circle-user"
+                  ></a>
+                  <a href="./account.html">Tài khoản</a>
+                  <label
+                    for="sign-toggle"
+                    class="arrow-down fa-solid fa-chevron-down"
+                  ></label>
+                  <input type="checkbox" id="sign-toggle" hidden />
+                  <ul class="sign">
+                    <li>
+                      <a target="_blank" href="./sign-in.html">Đăng nhập</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="./sign-up.html">Đăng ký</a>
+                    </li>
+                  </ul>
+                  <label for="sign-toggle" class="sign-overlay"></label>
+                </div>
+                <!--end .about-account-->
+              </div>
+              <!--end .other-->
+            </div>
+            <!--end .col-6-->
+          </div>
+          <!--end .row-->
+        </div>
+        <!--end .container-->
+      </section>
+      <!--end .about-info-->
+      <section class="heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-6">
+              <div class="heading-logo">
+                <div class="logo">
+                  <a href="./index.html">
+                    <img src="./assets/images/logo/logo.png" alt="logo" />
+                  </a>
+                </div>
+                <!--end .logo-->
+                <div class="brand">
+                  <h1>
+                    <a href="./index.html">Nap<span>Tien</span></a>
+                  </h1>
+                </div>
+                <!--end .brand-->
+              </div>
+              <!--end .heading-logo-->
+            </div>
+            <!--end .col-6-->
+            <div class="col-6 col-lg-6">
+              <div class="heading-search">
+                <div class="condition"><span>All categories</span></div>
+                <div class="search-btn">
+                  <form>
+                    <input type="text" placeholder="Search" required />
+                    <button
+                      class="search-icon fa-solid fa-magnifying-glass"
+                    ></button>
+                  </form>
+                </div>
+              </div>
+              <!--end .heading-search-->
+            </div>
+            <!--end .col-6-->
+          </div>
+          <!--end .row-->
+        </div>
+        <!--end .container-->
+      </section>
+      <!--end .heading-->
+      <section class="navigation-contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <label
+                for="menu-toggle"
+                class="menu-icon fa-solid fa-bars"
+              ></label>
+            </div>
+            <!--end .col-sm-6-->
+            <div class="col-md-6 col-sm-6">
+              <div class="other">
+                <button
+                  class="search-icon fa-solid fa-magnifying-glass"
+                ></button>
+                <label
+                  for="account-toggle"
+                  class="user-icon fa-regular fa-user"
+                ></label>
+                <input type="checkbox" id="account-toggle" hidden />
+                <ul class="sign">
+                  <li><a href="./account.html">Trang cá nhân</a></li>
+                  <li>
+                    <a target="_blank" href="./sign-in.html">Đăng nhập</a>
+                  </li>
+                  <li><a target="_blank" href="./sign-up.html">Đăng ký</a></li>
+                </ul>
+                <label for="account-toggle" class="sign-overlay"></label>
+              </div>
+            </div>
+            <!--end .col-sm-6-->
+          </div>
+          <!--end .row-->
+          <div class="row">
+            <div class="col-6 col-lg-6">
+              <nav class="navigation">
+                <ul>
+                  <li><a href="./index.html">Trang chủ</a></li>
+                  <li><a href="#!">Thẻ điện thoại</a></li>
+                  <li><a href="#!">Nạp game</a></li>
+                </ul>
+              </nav>
+              <!--end .navigation-->
+            </div>
+            <!--end .col-6-->
+            <div class="col-6 col-lg-6">
+              <div class="contact">
+                <a href="tel:1920010800">Hotline: 19200 10800</a>
+              </div>
+              <!--end .contact-->
             </div>
           </div>
           <!--end .row-->
         </div>
-        <!--end .header-inner-->
-      </div>
-      <!--end .container-->
+        <!--end .container-->
+      </section>
+      <!--end .navigation-contact-->
     </header>
-    <!--end .header-->
+    <!--end #header | còn thiếu menu-mobile -->
+    <input type="checkbox" id="menu-toggle" hidden />
+    <div class="modal">
+      <div class="modal-inner">
+        <div class="modal-heading">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./assets/images/logo/logo.png" alt="logo" />
+            </a>
+          </div>
+          <!--end .logo-->
+          <div class="brand">
+            <h1>
+              <a href="./index.html">Nap<span>Tien</span></a>
+            </h1>
+          </div>
+          <!--end .brand-->
+          <label for="menu-toggle" class="close-btn fa-solid fa-xmark"></label>
+        </div>
+        <!--end .modal-heading-->
+        <div class="modal-body">
+          <a href="./collection.html">Card voucher</a>
+          <a href="#!">Top-Up</a>
+          <a href="#!">Contact us</a>
+        </div>
+        <!--end .modal-body-->
+      </div>
+      <!--end .modal-inner-->
+      <label for="menu-toggle" class="modal-overlay"></label>
+    </div>
+    <!-- end.modal-->
     <main class="payment">
       <div class="container">
         <div class="payment-inner">

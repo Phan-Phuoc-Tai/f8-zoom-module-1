@@ -1,6 +1,5 @@
 .account-info {
-  position: relative;
-  top: 15.05rem;
+  margin-top: 15.05rem;
   margin-bottom: 3.1rem;
 }
 
@@ -203,13 +202,20 @@
 }
 
 .account-info .account-info-inner .current .recharge {
+  display: block;
   padding: 0.4rem 1.2rem;
   border-radius: 10rem;
-  background: #ffdbce;
+  background: #fa5417;
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #323232;
+  user-select: none;
+  color: #fff4f1;
+  transition: box-shadow 0.4s ease;
+}
+
+.account-info .account-info-inner .current .recharge:hover {
+  box-shadow: 0 0 0.5rem 0 var(--primary-color);
 }
 
 .account-info .account-info-inner .history-purchase {
@@ -227,20 +233,38 @@
   border-bottom: 0;
 }
 
+.account-info .account-info-inner .history-purchase .title .more a {
+  color: rgba(60, 59, 59, 0.826);
+}
+
 .account-info .account-info-inner .history-purchase .title .more {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.8rem;
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.4;
-  color: rgba(127, 127, 127, 0.5);
+  color: rgba(60, 59, 59, 0.826);
+  cursor: pointer;
+  user-select: none;
 }
+
 .account-info .account-info-inner .history-purchase [class*="circle-"] {
   display: none;
 }
-.account-info .account-info-inner .history-purchase .title .more span {
-  display: inline;
+
+.account-info .account-info-inner .history-purchase .title .more a {
+  display: inline-block;
   background: none;
 }
+
+.account-info .account-info-inner .history-purchase .title .more:hover,
+.account-info .account-info-inner .history-purchase .title .more:hover a {
+  color: var(--primary-color);
+}
+
 .account-info .account-info-inner .history-purchase .quantity {
   display: flex;
   align-items: center;
