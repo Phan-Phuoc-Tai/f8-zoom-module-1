@@ -5,6 +5,7 @@
 
 .account-info .account-info-inner .theme {
   background: #fff4f1;
+  user-select: none;
 }
 
 .account-info .account-info-inner .information {
@@ -21,6 +22,8 @@
   justify-content: center;
   position: relative;
   margin-bottom: 2.4rem;
+  user-select: none;
+  cursor: pointer;
 }
 
 .account-info .account-info-inner .avatar img {

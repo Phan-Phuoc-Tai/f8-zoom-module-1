@@ -297,7 +297,11 @@
 
   /* end .header */
   .payment {
-    margin-top: 5.7rem;
+    margin-top: 6.7rem;
+  }
+
+  .payment .payment-inner .payment-space h1 {
+    margin-bottom: 2.7rem;
   }
 
   .col-sm-1 {

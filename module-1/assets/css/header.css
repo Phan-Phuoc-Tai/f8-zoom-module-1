@@ -18,7 +18,10 @@
 }
 
 #header .about-info [class*="about-"] {
-  padding-block: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding-block: 0.9rem;
   user-select: none;
 }
 
@@ -38,17 +41,11 @@
   gap: 1.5rem;
 }
 
-#header .about-info .other .about-language select {
-  background: var(--primary-color);
+#header .about-info .other .about-language {
   color: #fff;
+  text-transform: uppercase;
   font-size: 1.4rem;
   user-select: none;
-  cursor: pointer;
-}
-
-#header .about-info .other .about-language option {
-  background: #fff;
-  color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -92,7 +89,7 @@
   transition-property: opacity visibility;
 }
 
-#header .about-info .other .about-account .arrow-down {
+#header .about-info .other .arrow-down {
   padding: 0.4rem;
   font-size: 1.2rem;
   cursor: pointer;
@@ -207,7 +204,11 @@
   align-items: center;
   gap: 2rem;
   padding-block: 1.5rem;
+  color: #565656;
+  font-size: 1.472rem;
+  cursor: pointer;
 }
+
 #header .navigation-contact .navigation ul li a {
   padding-block: 1.5rem;
   color: #565656;
@@ -219,7 +220,12 @@
   color: var(--primary-color);
 }
 
-#header .navigation-contact a:hover {
+#header .navigation-contact .navigation ul li:hover,
+#header .navigation-contact .navigation ul li:hover a {
+  color: var(--primary-color);
+}
+
+#header .navigation-contact .contact a:hover {
   text-decoration: underline;
 }
 

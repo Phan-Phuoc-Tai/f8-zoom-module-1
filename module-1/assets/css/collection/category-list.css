@@ -208,6 +208,7 @@
 
 .collection .advertise .image {
   margin-bottom: 3rem;
+  user-select: none;
 }
 
 .collection .advertise .content-adv a {

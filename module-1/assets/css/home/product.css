@@ -66,6 +66,7 @@
 
 #product .by-categories .product-banner {
   --column-space: 4.784rem;
+  user-select: none;
 }
 
 #product .by-categories .product-banner .banner-item {
@@ -206,6 +207,8 @@
   margin-top: -1rem;
   padding: 0.7rem 3.4rem;
   text-align: center;
+  cursor: pointer;
+  user-select: none;
 }
 
 #product .see-all a {

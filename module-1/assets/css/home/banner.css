@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  user-select: none;
 }
 
 .banner .banner-main:hover {
@@ -26,6 +27,7 @@
 .banner .banner-service {
   --col-total: 10;
   margin-top: 1.6rem;
+  user-select: none;
 }
 
 .banner .banner-service .service-item {
@@ -74,6 +76,7 @@
 .banner .banner-sub {
   --column-space: 4.6rem;
   position: relative;
+  user-select: none;
 }
 .banner .banner-sub div[class*="banner-"] {
   background: var(--secondary-color);
