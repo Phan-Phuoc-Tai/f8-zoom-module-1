@@ -79,7 +79,7 @@
   z-index: 118;
   background: #fff;
   transition: 0.4s ease;
-  transition-property: opacity visibility rotate;
+  transition-property: opacity visibility;
 }
 
 #header .about-info .other .about-account .sign-overlay {
@@ -88,6 +88,8 @@
   z-index: 117;
   opacity: 0;
   visibility: hidden;
+  transition: 0.4s ease;
+  transition-property: opacity visibility;
 }
 
 #header .about-info .other .about-account .arrow-down {
@@ -220,6 +222,7 @@
 #header .navigation-contact a:hover {
   text-decoration: underline;
 }
+
 #header .contact {
   display: flex;
   align-items: center;
@@ -336,6 +339,8 @@
   z-index: 119;
   opacity: 0;
   visibility: hidden;
+  transition: 0.4s ease;
+  transition-property: opacity visibility;
 }
 
 /* mobile:  end */
