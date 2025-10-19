@@ -251,7 +251,9 @@
     padding: 1.5rem;
   }
   /* header : end */
-
+  .account-info .account-info-inner .avatar .camera-icon {
+    right: 7.2rem;
+  }
   .account-info .account-info-inner .about-other {
     padding-bottom: 6rem;
   }
@@ -377,6 +379,16 @@
   }
   .header .header-inner .heading {
     padding: 0;
+  }
+
+  .header .header-inner .heading .contact a {
+    padding-block: 1.65rem;
+    font-size: 1.4rem;
+  }
+
+  .header .header-inner .heading .contact a::before {
+    font-size: 1.4rem;
+    rotate: -75deg;
   }
 
   /* header end */

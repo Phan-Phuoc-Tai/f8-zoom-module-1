@@ -38,7 +38,9 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .collection .categories li a {
+  width: 100%;
   font-size: 1.6rem;
   font-weight: 400;
   color: #3e3e3e;

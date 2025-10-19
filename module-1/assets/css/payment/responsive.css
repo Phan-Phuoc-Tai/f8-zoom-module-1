@@ -256,11 +256,25 @@
 
 @media screen and (max-width: 575.98px) {
   #header {
+    display: block;
+  }
+
+  #header {
     --column-space: 0;
   }
 
   #header .container {
     padding-inline: 1.5rem;
+  }
+
+  #header .contact a {
+    padding-block: 1.65rem;
+    font-size: 1.4rem;
+  }
+
+  #header .contact a::before {
+    font-size: 1.4rem;
+    rotate: -75deg;
   }
 
   #header .heading,

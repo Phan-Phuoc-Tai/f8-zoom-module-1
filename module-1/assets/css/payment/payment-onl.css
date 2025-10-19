@@ -1,3 +1,7 @@
+#header {
+  display: none;
+}
+
 .payment {
   height: 100%;
   position: fixed;
