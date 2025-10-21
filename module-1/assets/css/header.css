@@ -323,14 +323,14 @@
 #header .navigation-contact .other .sign li {
   display: flex;
   align-items: center;
-  width: 8rem;
+  width: 12rem;
   border-bottom: 0.1rem solid #eb835d;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 #header .navigation-contact .other .sign a {
   color: var(--primary-color);
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 #header .navigation-contact #account-toggle:checked + .sign,

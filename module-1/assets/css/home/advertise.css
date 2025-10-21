@@ -29,6 +29,7 @@
   border: 0.1rem solid var(--primary-color);
   border-radius: 10rem;
   transition: background 0.4s ease;
+  cursor: pointer;
   user-select: none;
 }
 
